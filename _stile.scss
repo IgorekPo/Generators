@@ -1,0 +1,24 @@
+
+%mainColor {
+    color: #666666;
+}
+
+%textTilte {
+    font-family: CalSans;
+    color:#121212;
+    span {
+        color: #FF6428;
+    }
+}
+
+
+%textAllTiltes{
+    text-align: center;
+    font-family: CalSans;
+    color:#121212;
+    font-size: 44px;
+    line-height: 1.2;
+    span {
+        color: #FF6428;
+    }
+}

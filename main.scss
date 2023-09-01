@@ -353,6 +353,10 @@ li {
 }
 .item__image{
     text-align: center;
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.8s;
+    }
     &:not(:last-child)  {
         margin-bottom: 40px;
     }

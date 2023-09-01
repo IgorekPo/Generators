@@ -373,6 +373,10 @@ li {
 .item__image {
   text-align: center;
 }
+.item__image:hover {
+  transform: scale(1.1);
+  transition: 0.8s;
+}
 .item__image:not(:last-child) {
   margin-bottom: 40px;
 }

@@ -1,7 +1,7 @@
 @import '_null';
 @import '_fonts';
 @import '_stile';
-
+@import '_categories';
 
 
 
@@ -153,6 +153,13 @@ li {
 .main__conteiner {
     display: flex;
 }
+.store__header{
+    position: fixed;
+}
+.categories__header{
+    position: fixed;
+}
+
 .main__content {
     flex: 0 1 50%;
     align-self: flex-end;
@@ -1065,3 +1072,57 @@ li {
     }
 }
 // -------------------------------------------------------------------------------
+
+.categories__conteiner {
+    padding: 20px;
+}
+.main-block__categories {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+
+}
+
+.categori__block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+}
+.categori__image {
+    max-width: 100%;
+}
+.categori__price{
+    margin-top: 20px;
+}
+
+h5{
+    margin-bottom: 10px;
+}
+
+
+.main__informations {
+    margin-left: -50%;
+    color: white;
+    background-color: rgb(96, 96, 96);
+    transition: all 4s ease 0s;
+}
+
+.categori__block._active  .categori__information{
+    display: none;
+}
+
+.categori__block._active  .main__informations{
+    position: relative;
+    margin: 0;
+    display: block;
+    padding: 10px 10px;
+    transition: all 4s ease 0s;
+    border-radius: 5px;
+    animation: mainInform 1.8s ;
+    border-radius: 15% 30% 70% 15%;
+}
+
+@keyframes mainInform {
+    0%{transform: rotateY(90deg);}
+}

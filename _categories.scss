@@ -1,0 +1,138 @@
+//--------------------------Header---------------------------------
+.menu__categories {
+    position: absolute;
+    background-color: #666;
+    margin-top: 3px;
+    padding: 10px;
+    min-width: 88px;
+    text-align: center;
+    border-radius: 10px 40px 10px 40px;
+    animation: menuCategori 1s;
+    :not(:last-child){
+        margin-bottom: 10px;
+    }
+}
+
+.menu__link-categori {
+    a{
+    text-decoration: none;
+    color: white;
+    &:hover{
+        color:#FF6428;
+    }
+    }
+}
+.menu__item-button._showcategori{
+    .menu__categories{
+        display: block;
+    }
+}
+
+@keyframes menuCategori {
+    0%{transform: rotateY(90deg);}
+}
+//------------------------------------------------------------------
+
+//--------------------------Body------------------------------------
+
+
+.categories__conteiner {
+    padding: 20px;
+}
+.main-block__categories {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+
+}
+
+.categori__block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+}
+.categori__image {
+    max-width: 100%;
+}
+
+h5{
+    margin-bottom: 10px;
+}
+
+
+.main__informations {
+    margin-left: -50%;
+    color: white;
+    background-color: rgb(96, 96, 96);
+    transition: all 4s ease 0s;
+}
+
+.categori__block._active {
+    .categori__information{
+        display: none;
+    }
+ 
+}
+
+.categori__block._active {
+    .main__informations{
+        position: relative;
+        margin: 0;
+        margin-bottom: 5px;
+        display: block;
+        padding: 10px 10px;
+        transition: all 4s ease 0s;
+        border-radius: 5px;
+        animation: mainInform 1.8s ;
+        border-radius: 15% 50% 15% 15%;
+    }
+}
+
+@keyframes mainInform {
+    0%{transform: rotateY(90deg);}
+}
+
+.menu__informations {
+    text-align: center;
+
+}
+
+.menu__button {
+    width: 100%;
+    text-align: center;
+    padding: 16.5px 34px;
+    border-radius: 40px;
+    background-color: #FF6428;
+    color: #ffff;
+    font-weight: 600;
+    transition: all 0.3s ease 0s;
+}
+
+
+
+.categori__block._active {
+    .menu__informations{
+        .menu__button{
+            :first-child{
+                display: none;
+            }
+            :last-child{
+                display: block;
+                animation: buttonShow 1.8s ;
+            }
+        }
+    }
+}
+@keyframes buttonShow {
+    0%{transform: rotateY(90deg);}
+}
+
+
+.open__button{
+    font-size: 18px;
+}
+
+
+
+//------------------------------------------------------------------

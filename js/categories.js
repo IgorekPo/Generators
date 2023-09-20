@@ -3,18 +3,18 @@ let mainInfo = document.querySelectorAll ('.categori__block');
 
 mainInfo.forEach (buttonEvent => {
     buttonEvent.addEventListener ('click', function (event){
-        if (event.target.closest('.categori__image')){
+        if (event.target.closest('.menu__informations')){
             buttonEvent.classList.toggle ('_active')
         }
-        if (!event.target.closest ('.categori__image') ){
+        if (!event.target.closest ('.menu__informations') ){
             buttonEvent.classList.remove ('_active')
         }  
     })
-    document.addEventListener ('click', function(event){
-        if (!event.target.closest('.categori__image')){
-            buttonEvent.classList.remove ('_active')
-        }
-    }) 
+document.addEventListener ('click', function(event){
+    if (!event.target.closest('.menu__informations')){
+        buttonEvent.classList.remove ('_active')
+    }
+}) 
 })
 
 let mainCategories = document.querySelectorAll ('.menu__item-button')
@@ -29,11 +29,11 @@ mainCategories.forEach (buttonCategori => {
             buttonCategori.classList.remove ('_showcategori')
         }
     })
-    document.addEventListener ('click', function(event){
-        if (!event.target.closest('.menu__item-button')){
-            buttonCategori.classList.remove ('_showcategori')
-        }
-    })
+document.addEventListener ('click', function(event){
+    if (!event.target.closest('.menu__item-button')){
+        buttonCategori.classList.remove ('_showcategori')
+    }
+})
 })
 
 

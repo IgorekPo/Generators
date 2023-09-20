@@ -3,16 +3,16 @@
 var mainInfo = document.querySelectorAll('.categori__block');
 mainInfo.forEach(function (buttonEvent) {
   buttonEvent.addEventListener('click', function (event) {
-    if (event.target.closest('.categori__image')) {
+    if (event.target.closest('.menu__informations')) {
       buttonEvent.classList.toggle('_active');
     }
 
-    if (!event.target.closest('.categori__image')) {
+    if (!event.target.closest('.menu__informations')) {
       buttonEvent.classList.remove('_active');
     }
   });
   document.addEventListener('click', function (event) {
-    if (!event.target.closest('.categori__image')) {
+    if (!event.target.closest('.menu__informations')) {
       buttonEvent.classList.remove('_active');
     }
   });

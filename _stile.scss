@@ -9,7 +9,7 @@
     span {
         color: #FF6428;
     }
-}
+};
 
 
 %textAllTiltes{
@@ -21,4 +21,35 @@
     span {
         color: #FF6428;
     }
-}
+};
+
+
+%texCategori {
+    div{
+        font-family: CalSans;
+        color:#FF6428;
+        padding: 5px 0 5px 0;
+        font-size: 18px;
+        font-weight: 600;
+
+    }
+    span{
+        color:#121212;
+        font-weight: 500;
+    }
+};
+%texInCategori {
+    li{
+        font-family: CalSans;
+        color:#FF6428;
+        padding: 5px 0 5px 0;
+        font-size: 18px;
+        font-weight: 600;
+        padding-left: 10px;
+    }
+    div{
+        color:white;
+        font-weight: 500;
+        padding-top: 3px
+    }
+};

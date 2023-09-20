@@ -215,3 +215,13 @@ h5{
 }
 
 //-------------------------------------------------------------
+
+
+.categori__information{
+    @extend %texCategori;
+}
+
+
+.main__informations {
+    @extend %texInCategori;
+}

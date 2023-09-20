@@ -99,17 +99,15 @@ h5{
 }
 
 .menu__button {
+    display: grid;
+    align-items: center;
     width: 100%;
-    text-align: center;
-    padding: 16.5px 34px;
+    max-height: 45px;
+    min-height: 45px;
     border-radius: 40px;
     background-color: #FF6428;
-    color: #ffff;
-    font-weight: 600;
-    transition: all 0.3s ease 0s;
+
 }
-
-
 
 .categori__block._active {
     .menu__informations{
@@ -131,11 +129,15 @@ h5{
 
 .open__button{
     font-size: 18px;
+    text-align: center;
+    color: #ffff;
+    font-weight: 600;
+    transition: all 0.3s ease 0s;
 }
 
 
 
-//------------------------------------------------------------------
+//-----------------------------Media-------------------------------------
 
 
 
@@ -160,6 +162,9 @@ h5{
     .main__informations{
         font-size: 13px;
     }
+    .main-block__categories{
+        gap: 40px;
+    }
 }
 
 
@@ -170,7 +175,6 @@ h5{
     .categori__price{
         font-size: 13px;
     }
-
 }
 
 @media (max-width: 767.98px) {
@@ -187,13 +191,27 @@ h5{
         font-size: 20px;
     }
     .categori__information{
-        font-size: 20px;
+        font-size: 14px;
     }
 }
 
 
 @media (max-width: 479.98px) {
+    .categori__information{
+        font-size: 11px;
+        max-width: 162px;
+        min-height: 157px;
+    }
     .main__informations{
         font-size: 13px;
     }
+    .menu__button {
+
+    }
+
+    .open__button{
+        font-size: 11px;
+    }
 }
+
+//-------------------------------------------------------------

@@ -191,10 +191,6 @@ li {
   position: fixed;
 }
 
-.categories__header {
-  position: fixed;
-}
-
 .main__content {
   flex: 0 1 50%;
   align-self: flex-end;
@@ -1067,6 +1063,37 @@ h5 {
 }
 
 @keyframes mainInform {
+  0% {
+    transform: rotateY(90deg);
+  }
+}
+.menu__categories {
+  position: absolute;
+  background-color: #666;
+  margin-top: 3px;
+  padding: 10px;
+  min-width: 88px;
+  text-align: center;
+  border-radius: 10px 40px 10px 40px;
+  animation: menuCategori 1s;
+}
+.menu__categories :not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.menu__link-categori a {
+  text-decoration: none;
+  color: white;
+}
+.menu__link-categori a:hover {
+  color: #FF6428;
+}
+
+.menu__item-button._showcategori .menu__categories {
+  display: block;
+}
+
+@keyframes menuCategori {
   0% {
     transform: rotateY(90deg);
   }
